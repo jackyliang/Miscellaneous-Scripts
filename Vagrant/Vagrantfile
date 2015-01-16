@@ -3,7 +3,11 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "puphpet/debian75-x32"
-  config.vm.box_url = "path/to/debian-7.5-x86_64-v1.2-virtualbox.box"
+  # Note, for vm.box_url, you only need to do this on the very first vagrant
+  # up with this box. If for later on another project you need this base
+  # box again, you will not need it, because vagrant will already have
+  # downloaded and kept it in cache. Be aware this is a 64-bit version.
+  config.vm.box_url = "ftp://ftp.lugons.org/vagrant/debian-7.5.0-x86_64.box"
   config.vm.provision:shell, :inline => <<-END
     set -e
     for s in /vagrant/provisioning/??-*.sh ; do $s ; done
