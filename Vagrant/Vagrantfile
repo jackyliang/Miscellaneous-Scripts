@@ -1,0 +1,14 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "puphpet/debian75-x32"
+  config.vm.box_url = "path/to/debian-7.5-x86_64-v1.2-virtualbox.box"
+  config.vm.provision:shell, :inline => <<-END
+    set -e
+    for s in /vagrant/provisioning/??-*.sh ; do $s ; done
+END
+  config.vm.network :forwarded_port, host: 9090, guest: 90 # Apache server
+
+  config.vm.hostname = "name.dev"
+end
