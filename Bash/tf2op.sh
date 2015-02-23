@@ -1,7 +1,7 @@
 ## TF2Output cURL requests
 
 # TF2OP Cookie
-HASH="6664edcc2bba5797626d1fd272829dd1"
+HASH="5460856c6b5a29c1573075aa5d44b641"
 
 # Trade IDs
 CONJURER_COWL="20664049"
