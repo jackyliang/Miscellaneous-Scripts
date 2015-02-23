@@ -20,4 +20,4 @@ alias create_migration="php ./vendor/bin/phinx create"
 alias ..="cd .."
 
 # Reload Profile
-alias reload_profile=". ~/.profile"
+alias reload_profile=". ~/Miscellaneous-Scripts/.profile"
