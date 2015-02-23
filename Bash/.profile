@@ -11,6 +11,10 @@ alias ssh_gcha="ssh 61.152.144.37 -l root -p 40022"
 alias ssh_tracking="ssh root@128.199.186.83"
 
 # Edit settings 
+# NOTE: If using this in a new machine, don't forget to update the 
+# symbolic path. Consult this handy article: 
+# https://www.digitalocean.com/community/tutorials/
+# how-to-use-git-to-manage-your-user-configuration-files-on-a-linux-vps
 alias edit_profile="subl /Users/loop/Miscellaneous-Scripts/Bash/.profile"
 
 # Create Phinx Migrations
@@ -20,4 +24,5 @@ alias create_migration="php ./vendor/bin/phinx create"
 alias ..="cd .."
 
 # Reload Profile
+# NOTE: Look at the comment for edit_profile
 alias reload_profile=". ~/Miscellaneous-Scripts/Bash/.profile"
