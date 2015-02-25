@@ -2,9 +2,26 @@
 alias open_skype="sudo /Applications/Skype.app/Contents/MacOS/Skype"
 alias open_mail="cat /var/mail/loop"
 
-# Go to Directories
-alias goto_oo="cd /Users/loop/dev/order-online/"
-alias goto_gcha="cd /Users/loop/dev/gcha-website-update"
+# Redmine CLI Command
+alias ri='redmine issue'
+
+#######
+# mark utilities
+######
+export MARKPATH=$HOME/.marks
+
+function goto { 
+    cd -P "$MARKPATH/$1" 2>/dev/null || echo "No such mark: $1"
+}
+function mark { 
+    mkdir -p "$MARKPATH"; ln -s "$(pwd)" "$MARKPATH/$1"
+}
+function unmark { 
+    rm -i "$MARKPATH/$1"
+}
+function marks {
+    ls -l "$MARKPATH" | sed 's/  / /g' | cut -d' ' -f9- | sed 's/ -/\t-/g' && echo
+}
 
 # SSH
 alias ssh_gcha="ssh 61.152.144.37 -l root -p 40022"
