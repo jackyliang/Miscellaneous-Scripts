@@ -44,3 +44,11 @@ function unmark {
 function marks {
     ls -l "$MARKPATH" | sed 's/  / /g' | cut -d' ' -f9- | sed 's/ -/\t-/g' && echo
 }
+
+###################
+# git auto-complete
+###################
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
