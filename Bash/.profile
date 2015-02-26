@@ -27,6 +27,17 @@ alias ..="cd .."
 # Reload Profile
 alias reload_profile=". ~/Miscellaneous-Scripts/Bash/.profile"
 
+# Git Shortcuts
+alias gcm="git checkout master"
+alias gcb="git checkout -b"
+alias gc="git checkout"
+alias gs="git status"
+alias gpom="git pull origin master"
+alias gpo="git push origin"
+function gmo {
+	git merge origin/"$1" --no-ff
+}
+
 ################
 # mark utilities
 ################
