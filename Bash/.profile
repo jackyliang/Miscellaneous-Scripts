@@ -34,6 +34,7 @@ alias gc="git checkout"
 alias gs="git status"
 alias gpom="git pull origin master"
 alias gpo="git push origin"
+alias grh="git reset HEAD"
 function gmo {
 	git merge origin/"$1" --no-ff
 }
