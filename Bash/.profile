@@ -17,7 +17,8 @@ alias ssh_gcha="ssh 61.152.144.37 -l root -p 40022"
 alias ssh_tracking="ssh root@128.199.186.83"
 
 # Edit settings 
-alias edit_profile="subl ~/Miscellaneous-Scripts/Bash/.profile"
+alias edit_profile="vi ~/Miscellaneous-Scripts/Bash/.profile"
+alias edit_tmux="vi ~/.tmux.conf"
 
 # Create Phinx Migrations
 alias create_migration="php ./vendor/bin/phinx create"
