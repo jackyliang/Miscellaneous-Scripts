@@ -1,7 +1,7 @@
 execute pathogen#infect()
 set number
 filetype plugin on
-colorscheme solarized
+colorscheme monokai
 syntax on
 set smartindent
 set smarttab
@@ -16,3 +16,5 @@ augroup LongLines
     autocmd FileType * match none
     autocmd FileType python,javascript,c,sh,php match ColorColumn /\%>70v.\+/
 augroup END
+
+let g:ycm_path_to_python_interpreter = "/usr/bin/python"

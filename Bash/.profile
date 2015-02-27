@@ -27,6 +27,7 @@ alias ..="cd .."
 
 # Reload Profile
 alias reload_profile=". ~/Miscellaneous-Scripts/Bash/.profile"
+alias reload_tmux="tmux source-file ~/.tmux.conf"
 
 # Git Shortcuts
 alias gcm="git checkout master"
