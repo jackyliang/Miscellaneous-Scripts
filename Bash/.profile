@@ -7,6 +7,7 @@
 # Open Programs
 alias open_skype="sudo /Applications/Skype.app/Contents/MacOS/Skype"
 alias open_mail="cat /var/mail/loop"
+alias vi="~/Applications/MacVim.app/Contents/MacOS/Vim"
 
 # Redmine CLI Command
 alias ri='redmine issue'
