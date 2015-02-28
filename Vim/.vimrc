@@ -17,4 +17,7 @@ augroup LongLines
     autocmd FileType python,javascript,c,sh,php match ColorColumn /\%>70v.\+/
 augroup END
 
+let g:vawahl="ctermbg=black ctermfg=red guifg=#ff0000 guibg=#000000 gui=bold"
 let g:ycm_path_to_python_interpreter = "/usr/bin/python"
+let NERDTreeShowHidden=1
+set autochdir

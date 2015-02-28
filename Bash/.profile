@@ -1,11 +1,11 @@
 ## Jacky's Awesome .profile scripts
 #
 # Note: Remember to update symlinks for the following thingies 
-# ln -s /Users/loop/Miscellaneous-Scripts/Bash/.profile ~/
-# ln -s /Users/loop/Miscellaneous-Scripts/Bash/.marks ~/
-# ln -s /Users/loop/Miscellaneous-Scripts/Bash/.vim ~/
-# ln -s /Users/loop/Miscellaneous-Scripts/Bash/.vimrc ~/
-# ln -s /Users/loop/Miscellaneous-Scripts/Bash/.tmux.conf ~/
+# ln -s ~/Miscellaneous-Scripts/Bash/.profile ~/
+# ln -s ~/Miscellaneous-Scripts/Bash/.marks ~/
+# ln -s ~/Miscellaneous-Scripts/Bash/.vim ~/
+# ln -s ~/Miscellaneous-Scripts/Bash/.vimrc ~/
+# ln -s ~/Miscellaneous-Scripts/Bash/.tmux.conf ~/
 
 # Open Programs
 alias open_skype="sudo /Applications/Skype.app/Contents/MacOS/Skype"
