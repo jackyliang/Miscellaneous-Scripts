@@ -14,3 +14,19 @@ TODO: add an `install.sh` file to do all the necessary symlinks, but for now, do
     ln -s ~/Miscellaneous-Scripts/Bash/.vim ~/
     ln -s ~/Miscellaneous-Scripts/Bash/.vimrc ~/
     ln -s ~/Miscellaneous-Scripts/Bash/.tmux.conf ~/ 
+    
+## Personal Notes    
+
+Keeping a list of all my `git clone` and `pip``
+    
+    # Navigate to the bundle directory  
+    cd ~/.vim/bundle
+
+    # Install Powerline
+    pip install --user git+git://github.com/powerline/powerline    
+
+    # Install NERDTree
+    git clone https://github.com/scrooloose/nerdtree.git
+
+    # Install Syntastic
+    git clone https://github.com/scrooloose/syntastic.git
