@@ -41,3 +41,6 @@ let g:ycm_path_to_python_interpreter = "/usr/bin/python"
 let NERDTreeShowHidden=1
 
 map <silent> <C-n> :NERDTree<CR>
+map  <C-l> :tabn<CR>
+map  <C-h> :tabp<CR>
+map  <C-t> :tabnew<CR>
