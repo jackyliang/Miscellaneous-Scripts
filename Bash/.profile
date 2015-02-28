@@ -10,7 +10,7 @@
 # Open Programs
 alias open_skype="sudo /Applications/Skype.app/Contents/MacOS/Skype"
 alias open_mail="cat /var/mail/loop"
-alias vi="~/Applications/MacVim.app/Contents/MacOS/Vim"
+alias vi="DYLD_FORCE_FLAT_NAMESPACE=1 ~/Applications/MacVim.app/Contents/MacOS/Vim"
 
 # Redmine CLI Command
 alias ri='redmine issue'
@@ -22,6 +22,7 @@ alias ssh_tracking="ssh root@128.199.186.83"
 # Edit settings 
 alias edit_profile="vi ~/Miscellaneous-Scripts/Bash/.profile"
 alias edit_tmux="vi ~/.tmux.conf"
+alias edit_vim="vi ~/.vimrc"
 
 # Create Phinx Migrations
 alias create_migration="php ./vendor/bin/phinx create"
