@@ -11,6 +11,7 @@
 alias open_skype="sudo /Applications/Skype.app/Contents/MacOS/Skype"
 alias open_mail="cat /var/mail/loop"
 alias vi="DYLD_FORCE_FLAT_NAMESPACE=1 ~/Applications/MacVim.app/Contents/MacOS/Vim"
+alias ls="ls -1"
 
 # Redmine CLI Command
 alias ri='redmine issue'
