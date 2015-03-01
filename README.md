@@ -11,22 +11,41 @@ TODO: add an `install.sh` file to do all the necessary symlinks, but for now, do
 
     ln -s ~/Miscellaneous-Scripts/Bash/.profile ~/
     ln -s ~/Miscellaneous-Scripts/Bash/.marks ~/
-    ln -s ~/Miscellaneous-Scripts/Bash/.vim ~/
-    ln -s ~/Miscellaneous-Scripts/Bash/.vimrc ~/
-    ln -s ~/Miscellaneous-Scripts/Bash/.tmux.conf ~/ 
+    ln -s ~/Miscellaneous-Scripts/Vim/.vim ~/
+    ln -s ~/Miscellaneous-Scripts/Vim/.vimrc ~/
     
 ## Personal Notes    
 
-Keeping a list of all my `git clone` and `pip``
+### Keeping a list of all my `git clone` and `pip``
     
-    # Navigate to the bundle directory  
+TODO: add an `install.sh` file to do all the necessary symlinks, but
+for now, do the following:
+
+Install Pathogen
+
+    mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+Navigate to the bundle directory  
+
     cd ~/.vim/bundle
 
-    # Install Powerline
+Install YouCompleteMe
+
+    git clone https://github.com/Valloric/YouCompleteMe.git
+    cd YouCompleteMe
+    git submodule update --init --recursive
+    ./install.sh --clang-completer
+
+Install Powerline
+
     pip install --user git+git://github.com/powerline/powerline    
 
-    # Install NERDTree
+Install NERDTree
+
     git clone https://github.com/scrooloose/nerdtree.git
 
-    # Install Syntastic
+Install Syntastic
+
     git clone https://github.com/scrooloose/syntastic.git
+    

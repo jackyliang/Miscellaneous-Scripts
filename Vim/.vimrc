@@ -16,6 +16,7 @@ set softtabstop=4
 set autochdir
 set textwidth=70 " 70 char limit
 set colorcolumn=+1
+set mouse=a " Use mouse automatically
 
 " Vim Theme
 colorscheme monokai
@@ -44,6 +45,8 @@ let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_error_symbol = '✘'
+let g:syntastic_warning_symbol = "▲"
 
 " Vawa Configs
 let g:vawahl="ctermbg=black ctermfg=red guifg=#ff0000 guibg=#000000 gui=bold"
@@ -57,6 +60,7 @@ map <silent> <C-n> :NERDTree<CR>
 map  <C-l> :tabn<CR>
 map  <C-h> :tabp<CR>
 map  <C-t> :tabnew<CR>
+let NERDTreeIgnore = ['\.pyc$','\.sock$']
 
 " Powerline Configs
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
