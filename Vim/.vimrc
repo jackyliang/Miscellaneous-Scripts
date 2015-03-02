@@ -10,13 +10,23 @@ set smartindent
 set smarttab
 set expandtab
 set smartindent
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+" Highlight search results
+set hlsearch
+" use 4 spaces for tabs
+set tabstop=4 shiftwidth=4 softtabstop=4
+
 set autochdir
 set textwidth=70 " 70 char limit
 set colorcolumn=+1
 set mouse=a " Use mouse automatically
+
+" Syntax coloring lines that are too long just slows down the world
+set synmaxcol=128
+
+" Speed up vim
+set ttyfast " u got a fast terminal
+set ttyscroll=3
+set lazyredraw " to avoid scrolling problems
 
 " Vim Theme
 colorscheme monokai
@@ -64,5 +74,12 @@ let NERDTreeIgnore = ['\.pyc$','\.sock$']
 
 " Powerline Configs
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
 set laststatus=2
 

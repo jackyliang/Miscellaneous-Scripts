@@ -35,8 +35,10 @@ TODO: add an `install.sh` file to do all of this
     git submodule update --init --recursive
     ./install.sh --clang-completer
 
-    # Install Powerline
+    # Install Powerline and Patched Fonts for OS X
     pip install --user git+git://github.com/powerline/powerline    
+    git clone https://github.com/powerline/fonts.git
+    ./install.sh
 
     # Install NERDTree
     git clone https://github.com/scrooloose/nerdtree.git
@@ -44,3 +46,5 @@ TODO: add an `install.sh` file to do all of this
     # Install Syntastic
     git clone https://github.com/scrooloose/syntastic.git
     
+    # Install PHP-Doc
+    TBD
