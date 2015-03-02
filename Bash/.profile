@@ -13,6 +13,11 @@ alias open_mail="cat /var/mail/loop"
 alias vi="DYLD_FORCE_FLAT_NAMESPACE=1 ~/Applications/MacVim.app/Contents/MacOS/Vim"
 alias ls="ls -1"
 
+# Goto
+alias goto_misc="cd ~/Miscellaneous-Scripts"
+alias goto_pollen="cd ~/Pollen-Buddy-PHP"
+alias goto_tracking="cd ~/tracking.tf"
+
 # Redmine CLI Command
 alias ri='redmine issue'
 
@@ -45,24 +50,6 @@ alias gpo="git push origin"
 alias grh="git reset HEAD"
 function gmo {
 	git merge origin/"$1" --no-ff
-}
-
-################
-# mark utilities
-################
-export MARKPATH=$HOME/.marks
-
-function goto { 
-    cd -P "$MARKPATH/$1" 2>/dev/null || echo "No such mark: $1"
-}
-function mark { 
-    mkdir -p "$MARKPATH"; ln -s "$(pwd)" "$MARKPATH/$1"
-}
-function unmark { 
-    rm -i "$MARKPATH/$1"
-}
-function marks {
-    ls -l "$MARKPATH" | sed 's/  / /g' | cut -d' ' -f9- | sed 's/ -/\t-/g' && echo
 }
 
 ###################
