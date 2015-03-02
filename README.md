@@ -12,7 +12,6 @@ TODO: add an `install.sh` file to do all the necessary symlinks
     git clone https://github.com/jackyliang/Miscellaneous-Scripts.git
 
     ln -s ~/Miscellaneous-Scripts/Bash/.profile ~/
-    ln -s ~/Miscellaneous-Scripts/Bash/.marks ~/
     ln -s ~/Miscellaneous-Scripts/Vim/.vim ~/
     ln -s ~/Miscellaneous-Scripts/Vim/.vimrc ~/
     
@@ -48,3 +47,8 @@ TODO: add an `install.sh` file to do all of this
     
     # Install PHP-Doc
     TBD
+
+    # Install Powerline for Bash
+    curl
+    https://raw.github.com/riobard/bash-powerline/master/bash-powerline.sh
+    > ~/.bash-powerline.sh

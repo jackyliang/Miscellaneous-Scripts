@@ -29,6 +29,7 @@ alias ssh_tracking="ssh root@128.199.186.83"
 alias edit_profile="vi ~/Miscellaneous-Scripts/Bash/.profile"
 alias edit_tmux="vi ~/.tmux.conf"
 alias edit_vim="vi ~/.vimrc"
+alias edit_misc_readme="vi ~/Miscellaneous-Scripts/README.md"
 
 # Create Phinx Migrations
 alias create_migration="php ./vendor/bin/phinx create"
