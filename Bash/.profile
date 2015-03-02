@@ -72,3 +72,6 @@ function marks {
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+# Powerline for Bash
+source ~/.bash-powerline.sh
