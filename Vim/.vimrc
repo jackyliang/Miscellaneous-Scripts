@@ -10,15 +10,28 @@ set smartindent
 set smarttab
 set expandtab
 set smartindent
+
+set incsearch
+set showmatch
 " Highlight search results
 set hlsearch
 " use 4 spaces for tabs
 set tabstop=4 shiftwidth=4 softtabstop=4
 
+" Remap leader to ,
+let mapleader = ","
+
+" Leader Commands
+nnoremap <leader>w <C-w>v<C-w>l
+
+" for command mode
+nmap <S-Tab> <<
+" for insert mode
+imap <S-Tab> <Esc><<i
+
 set autochdir
 set textwidth=70 " 70 char limit
 set colorcolumn=+1
-set mouse=a " Use mouse automatically
 
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=128
@@ -57,9 +70,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_error_symbol = '✘'
 let g:syntastic_warning_symbol = "▲"
-
-" Vawa Configs
-let g:vawahl="ctermbg=black ctermfg=red guifg=#ff0000 guibg=#000000 gui=bold"
+let g:syntastic_enable_signs=1
 
 " YCM hack-fix
 let g:ycm_path_to_python_interpreter = "/usr/bin/python"

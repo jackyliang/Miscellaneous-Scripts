@@ -10,6 +10,11 @@
 # Open Programs
 alias open_skype="sudo /Applications/Skype.app/Contents/MacOS/Skype"
 alias open_mail="cat /var/mail/loop"
+alias c="php ~/coven-cli/coven-cli.php"
+alias co="c open"
+alias cr="c refresh"
+alias write=". ~/write-cli/write-cli.sh"
+
 alias vi="DYLD_FORCE_FLAT_NAMESPACE=1 ~/Applications/MacVim.app/Contents/MacOS/Vim"
 alias ls="ls -1"
 
@@ -17,6 +22,7 @@ alias ls="ls -1"
 alias goto_misc="cd ~/Miscellaneous-Scripts"
 alias goto_pollen="cd ~/Pollen-Buddy-PHP"
 alias goto_tracking="cd ~/tracking.tf"
+alias goto_coven="cd ~/coven-cli"
 
 # Redmine CLI Command
 alias ri='redmine issue'
@@ -49,6 +55,8 @@ alias gs="git status"
 alias gpom="git pull origin master"
 alias gpo="git push origin"
 alias grh="git reset HEAD"
+alias greadme="git add README.md && git commit -m 'updated readme' &&
+git push origin master"
 function gmo {
 	git merge origin/"$1" --no-ff
 }
@@ -56,7 +64,6 @@ function gmo {
 ###################
 # git auto-complete
 ###################
-
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
