@@ -50,14 +50,6 @@ inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR> 
 vnoremap <C-P> :call PhpDocRange()<CR>
 
-" 70 Char Warning (Not sure if this is actually working)
-au BufRead,BufNewFile *.twig set syntax=htmljinja
-augroup LongLines
-    autocmd!
-    autocmd FileType * match none
-    autocmd FileType python,javascript,c,sh,php match ColorColumn /\%>70v.\+/
-augroup END
-
 " Syntastic Configs
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
