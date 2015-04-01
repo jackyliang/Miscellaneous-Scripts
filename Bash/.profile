@@ -30,6 +30,7 @@ alias ri='redmine issue'
 # SSH
 alias ssh_gcha="ssh 61.152.144.37 -l root -p 40022"
 alias ssh_tracking="ssh root@128.199.186.83"
+alias ssh_tux="ssh zl89@tux.cs.drexel.edu"
 
 # Edit settings 
 alias edit_profile="vi ~/Miscellaneous-Scripts/Bash/.profile"
