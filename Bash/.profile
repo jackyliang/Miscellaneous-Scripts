@@ -44,6 +44,10 @@ alias create_migration="php ./vendor/bin/phinx create"
 # Path shortcuts
 alias ..="cd .."
 
+function copy_tux {
+    scp zl89@tux.cs.drexel.edu:"$1" "$2"    
+}
+
 # Reload Profile
 alias reload_profile=". ~/Miscellaneous-Scripts/Bash/.profile"
 alias reload_tmux="tmux source-file ~/.tmux.conf"
