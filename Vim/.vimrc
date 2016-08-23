@@ -50,6 +50,10 @@ inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR> 
 vnoremap <C-P> :call PhpDocRange()<CR>
 
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
 " Syntastic Configs
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
